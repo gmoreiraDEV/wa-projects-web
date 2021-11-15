@@ -1,11 +1,10 @@
 version: '3'
 services:
-
   web:
     container_name: web
-   build: docker/dev
+    build: docker/dev
     ports:
-      - "3000:3000"
-      - "35729:35729"
+      - '3000:3000'
+      - '35729:35729'
     volumes:
       - .:/src
